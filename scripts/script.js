@@ -1,6 +1,6 @@
 let $ = function (id) { return document.getElementById(id); };
 
-//nav btn
+//Hamburger menu
 var toggle = 1;
 function navBTN() {
   if (toggle == 1){
@@ -52,7 +52,7 @@ function login(){
     alert("Your username or passord is wrong")
   }
 };
-
+// Add to table
 function addT(){
   var table = $("table")
   var item = $("addI").value
@@ -65,7 +65,7 @@ function addT(){
   
   clear()
 }
-  
+// clear table
 function clear(){
   $("addI").value = ""
   $("addP").value = ""
