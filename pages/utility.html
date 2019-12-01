@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    
+    <title>Forefront|Utility</title>
+</head>
+<body>
+    <div class="bg2"></div>
+    <!--Header contains nav and logo-->
+    <header>
+        <div id="navBlock">
+            <a id="hSelect" href="../index.html">Home</a>
+            <div class="navBTNContainer" onclick="navBTN()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="calender.html">Calender</a></li>
+                <li><a href="admin.html">Admin Portal</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="utility.html">Utility</a></li>
+                <li><a href="reference.html">Reference</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <!-- The majority of content-->
+    <main id="u">
+        
+        <div id="titlePages">
+            <div id="l1"></div>
+            <p>Utility</p>
+            <div id="l2"></div>
+        </div>
+
+        <div id="boxU">
+            <h1>PPI Calculator</h1>
+            <input type="number" name="width" id="width" placeholder="Width">
+            <input type="number" name="height" id="height" placeholder="Height">
+            <input type="number" name="diagnol" id="diagonal" placeholder="Diagonal in in">
+            <div id="ppiBtn" class="btn" onclick="getPPI()">Calculate</div>
+
+            <h2 id="ppiTotal">PPI: </h2>
+            <h2 id="totalP">Total Pixels: </h2>
+        </div>
+
+        <div id="boxU2">
+            <h1>Loan Calculator</h1>
+            <input type="number" name="amount" id="amount" placeholder="Loan Amount">
+            <div id="percentBox">
+                <input type="number" name="rate" id="rate" placeholder="Interest Rate">
+                <span id="percent">%</span>
+            </div>
+            <input type="number" name="year" id="years" placeholder="Number of years">
+            <div id="ppiBtn" class="btn" onclick="getLoan()">Calculate</div>
+
+            <h2 id="monthlyT">Monthly Payment: </h2>
+            <h2 id="interest">Total Interest: </h2>
+        </div>
+        
+    </main>
+
+</body>
+  <script src="../scripts/script.js"></script>
+</html>

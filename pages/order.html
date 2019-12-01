@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    
+    <title>Forefront|Order</title>
+</head>
+<body>
+    <div class="bg2"></div>
+    <!--Header contains nav and logo-->
+    <header>
+        <div id="navBlock">
+            <a id="hSelect" href="../index.html">Home</a>
+            <div class="navBTNContainer" onclick="navBTN()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="calender.html">Calender</a></li>
+                <li><a href="admin.html">Admin Portal</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="utility.html">Utility</a></li>
+                <li><a href="reference.html">Reference</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <!-- The majority of content-->
+    <main id="o">
+        
+        <div id="titlePages">
+            <div id="l1"></div>
+            <p>Order</p>
+            <div id="l2"></div>
+        </div>
+
+        <div id="boxO">
+            <h1>Cart <span id="cart">0</span></h1>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Add</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>Valve Index</td>
+                    <td>$999.99</td>
+                    <td><input type="checkbox" name="index" id="indexC" onchange="order()"></td>
+                    <td>
+                        <select name="indexQ" id="indexQ" onclick="order()"disabled>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tesla Model 3</td>
+                    <td>$35,000</td>
+                    <td><input type="checkbox" name="model3" id="model3C" onclick="order()"></td>
+                    <td>
+                        <select name="model3Q" id="model3Q" onclick="order()" disabled>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Oculus Quest 64GB</td>
+                    <td>$399.00</td>
+                    <td><input type="checkbox" name="quest" id="questC" onclick="order()"></td>
+                    <td>
+                        <select name="questQ" id="questQ" onclick="order()" disabled>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>IROBOT Roomba 960 Series</td>
+                    <td>$399.99</td>
+                    <td><input type="checkbox" name="roomba" id="roombaC" onclick="order()"></td>
+                    <td>
+                        <select name="roombaQ" id="roombaQ" onclick="order()" disabled>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DJI Mavic MIni</td>
+                    <td>$399.00</td>
+                    <td><input type="checkbox" name="drone" id="droneC" onclick="order()"></td>
+                    <td>
+                        <select name="droneQ" id="droneQ" onclick="order()" disabled>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tesla Cyber Truck</td>
+                    <td>$50,000</td>
+                    <td><input type="checkbox" name="cyber" id="cyberC" onclick="order()"></td>
+                    <td>
+                        <select name="cyberQ" id="cyberQ" onclick="order()" disabled>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tesla Solar Roof</td>
+                    <td>$7.00/SQ.FT</td>
+                    <td><input type="checkbox" name="roof" id="roofC" onclick="order()"></td>
+                    <td>
+                        <select name="roofQ" id="roofQ" onclick="order()" disabled>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rivian R1T</td>
+                    <td>$69,000</td>
+                    <td><input type="checkbox" name="truck" id="truckC" onclick="order()"></td>
+                    <td>
+                        <select name="truckQ" id="truckQ" onclick="order()" disabled>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <div id="total">Total:</div>
+            <input id="code" type="text" placeholder="coupon Code" onchange="order()" title="coupon is: ryan" autocomplete="off">
+            <a href="invoice.html"><div id ="btnO" class="btn" onclick="order()">Order</div></a>
+        </div>
+        
+    </main>
+
+    <!-- copyright/resouurces/etc-->
+    <!-- <footer>
+        &copy; Ryan Henige
+    </footer> -->
+</body>
+  <script src="../scripts/script.js"></script>
+</html>
